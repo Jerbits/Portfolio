@@ -1,0 +1,89 @@
+a{
+	outline:0 !important;
+}
+
+.ie h1{
+	filter:progid:DXImageTransform.Microsoft.Shadow(color='#000', Direction=90, Strength=1);
+	padding-top:15px;
+}
+h1{
+	font-size:70px;
+	text-align:center;
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	font-weight:normal;
+	text-shadow: 4px 4px 4px #414242;
+	line-height:100%;
+}
+h2{
+	font-size:25px;
+	font-weight:normal;
+}
+p{
+	color:#6d6c6c;
+	font-size:16px;
+	line-height:160%;
+}
+.s1{
+	h2{
+		color:#cbc8c8;
+		span{
+			color:#cd4c4c;
+		}
+	}
+}
+.s2{
+	h1{
+		color:#fff;
+	}
+}
+.s3{
+	h1{
+		color: #fef1c9;
+	}
+	h2{
+		color:#fff;
+		text-shadow: 2px 2px 2px #000;
+		font-size:40px;
+		span{
+			color:#f2d78f;
+		}
+	}
+	p{
+		font-size:15px;
+		color:#ffffff;
+		span{
+			color:#f2d78f;
+		}
+	}
+}
+.s4 {
+	h1 {
+    color: #e8ab6e;
+    text-shadow: 4px 4px 4px #000;
+  }
+}
+.link{
+	 a {
+    color: #FFF;
+  }
+}
+.aboutme{
+	p{
+	    color: #FFF;
+	    font-size: 20px;
+	}
+}
+.link{
+	text-align: right;
+}
+.more{
+	color: #FFF;
+  text-align: center;
+}
+.contactbox {
+	  color: #CCC;
+	  text-align: center;
+	  span {
+	  color: #FFF;
+	}
+}

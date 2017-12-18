@@ -1,5 +1,8 @@
-$lg: 1200px;
-$md: 991px;
-$sm: 767px;
-$gsm: 768px;
-$xs: 480px;
+$xl: "min-width: 1200px";
+$lg: "max-width: 1200px";
+$md: "max-width: 991px";
+$sm: "max-width: 767px";
+$gsm: "min-width: 768px";
+$xs: "max-width: 480px";
+$gxs: "min-width: 481px";
+$assetPath : "../images";

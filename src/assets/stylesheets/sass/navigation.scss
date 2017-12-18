@@ -1,0 +1,62 @@
+.navcont{
+	height:60px;
+	position:fixed;
+	top:0;
+	z-index:100;
+	width:100%;
+}
+.logo{
+	margin-top: 5px;
+	position:absolute;
+	z-index:101;
+}
+nav{
+	padding:0 0 0 260px;
+	width:auto;
+	text-align:right;
+	min-width:570px;
+	position:relative;
+	z-index:100;
+	@media (#{$sm}){
+		min-width: 263px;
+	}
+	ul{
+		padding:0px;
+		margin:0px;
+		li{
+			display:inline;
+			vertical-align:top;
+			a{
+				font-weight:normal;
+				font-size:17px;
+				color:#fff;
+				font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+				-o-transition:.5s;
+				-ms-transition:.5s;
+				-moz-transition:.5s;
+				-webkit-transition:.5s;
+				transition:.5s;
+				display:inline-block;
+				text-align:left;
+				position:relative;
+				text-transform: uppercase;
+				z-index:999;
+				height:60px;
+				padding:19px 25px 0 60px;
+				text-shadow: 2px 2px 2px #000;
+				&:hover, &:active, &:focus{
+					color:#fff;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+}
+@media (#{$gxs}){
+    .logo1 {
+        display: block;
+    }
+    .logo2 {
+        display: none;
+    }
+}

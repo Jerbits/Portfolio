@@ -56,14 +56,18 @@ let config = {
               optimizationLevel: 4,
             },
             pngquant: {
-              quality: '75-90',
+              quality: '100',
               speed: 3,
             },
           },
         }],
         exclude: /node_modules/,
         include: __dirname,
-    	}
+    	},
+      { 
+        test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/, 
+        loader: "file-loader?name=./fonts/[name].[ext]" 
+      },
     ]
   },
   plugins: [
