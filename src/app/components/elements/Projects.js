@@ -37,7 +37,7 @@ class Projects extends React.Component {
 		//when component mounts set random delay numbers as array to let it be called only once
 		let projectInviewDelay = [];
 		this.props.projectArray.forEach(array=>{
-			projectInviewDelay.push(randomdelay(1));
+			projectInviewDelay.push(randomdelay(0.5));
 		});
 		projectInviewDelay = {...this.state, projectInviewDelay}
 		this.setState(projectInviewDelay);

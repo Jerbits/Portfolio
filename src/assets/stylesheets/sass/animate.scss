@@ -1,9 +1,11 @@
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes spin { 100% { transform: rotateZ(360deg); -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 @keyframes bounceOutUp {
             0% {
+              transform: rotateZ(360deg);
                transform: translateY(0);
             }
             20% {
+              transform: rotateZ(360deg);
                opacity: 1;
                transform: translateY(20px);
             }
@@ -11,30 +13,36 @@
               opacity: 0;
             }
             100% {
+              transform: rotateZ(360deg);
                transform: translateY(-2000px);
             }
          } 
 @keyframes bounceOutDown {
             0% {
+              transform: rotateZ(360deg);
               transform: translateY(-2000px);
             }
             60%{
               opacity: 0;
             }
             80% {
+              transform: rotateZ(360deg);
               opacity: 1;
               transform: translateY(20px);
             }
             100% {
+              transform: rotateZ(360deg);
               opacity: 1;
               transform: translateY(0);
             }
          }
 @keyframes exitUp {
             0% {
+              transform: rotateZ(360deg);
                transform: translateY(0);
             }
             20% {
+              transform: rotateZ(360deg);
                opacity: 1;
                transform: translateY(-20px);
             }
@@ -42,6 +50,7 @@
               opacity: 0;
             }
             100% {
+              transform: rotateZ(360deg);
               opacity: 0;
                transform: translateY(2000px);
             }
@@ -49,6 +58,7 @@
 @keyframes enterUp {
             0% {
               opacity: 0;
+              transform: rotateZ(360deg);
               transform: translateY(2000px);
             }
             50%{
@@ -56,17 +66,19 @@
             }
             80% {
               opacity: 1;
+              transform: rotateZ(360deg);
               transform: translateY(-20px);
             }
             100% {
               opacity: 1;
+              transform: rotateZ(360deg);
               transform: translateY(0);
             }
          }
 
 .outView{
 	@include fadedown();
-  transition: all 2s;
+  transition: all 3s;
 }
 .inView{
 	@include fadeup();
@@ -74,9 +86,11 @@
 
 .pslider-enter {
   opacity: 0.01;
+  transform: rotateZ(360deg);
   transform: translateX(-1200px);
   &.pslider-enter-active {
     opacity: 1;
+    transform: rotateZ(360deg);
     transform: translateX(0);
     transition: 
       opacity 600ms ease-out 400ms, 
@@ -85,9 +99,11 @@
 }
 .pslider-leave {
   opacity: 1;
+  transform: rotateZ(360deg);
   transform: translateX(0);
   &.pslider-leave-active {
     opacity: 0.01;
+    transform: rotateZ(360deg);
     transform: translateX(1200px);
     transition: 300ms ease-in;
   }
@@ -98,16 +114,20 @@
 }
 
 .pbox-enter{
+  transform: rotateZ(360deg);
   transform: rotateY(90deg);
   &.pbox-enter-active{
+    transform: rotateZ(360deg);
     transform: rotateY(0deg);
     transform-style: preserve-3d;
     transition: all 300ms ease-out 300ms;
   }
 }
 .pbox-leave{
+  transform: rotateZ(360deg);
   transform: rotateY(0deg);
   &.pbox-leave-active{
+    transform: rotateZ(360deg);
     transform: rotateY(90deg);
     transform-style: preserve-3d;
     transition: all 300ms ease-in;
@@ -120,45 +140,56 @@
   &.night, &.dawn, &.noon, &.dusk{
     &.pageAnimate-enter{
       @include entering();
-       &:after{
-          opacity:0;
-        }
-        .navcont{
+      &:after{
+      transform: rotateZ(360deg);
         opacity:0;
       }
+      .navcont{
+        transform: rotateZ(360deg);
+      opacity:0;
+      }
+      .skybox{animation: bounceOutDown 1s ease-out 0.9s;}
+      .seasonbox{animation: enterUp 0.5s ease-out 0.9s;}
       &.pageAnimate-enter-active{
         @include disableClicks();
         @include entered();
         &:after{
+          transform: rotateZ(360deg);
           opacity:0.8;
           transition: opacity 1s linear 1s;
         }
         .navcont{
+          transform: rotateZ(360deg);
           opacity:1;
           transition: opacity 1s linear;
         }
+        transform: rotateZ(360deg);
         transition: opacity 0s ease-in 1s;
-        .skybox{animation: bounceOutDown 1s ease-out 1s;}
-        .seasonbox{animation: enterUp 0.5s ease-out 1s;}
+        
       }
     }
     &.pageAnimate-leave{
+      transform: rotateZ(360deg);
       opacity: 1;
       .skybox{animation: bounceOutUp 0.7s ease-in 0.3s;}
       .seasonbox{animation: exitUp 0.5s ease-in 0.5s;}
       &:after{
+        transform: rotateZ(360deg);
         opacity:0.8;
       }
       .navcont{
+        transform: rotateZ(360deg);
         opacity:1;
       }
       &.pageAnimate-leave-active{
         @include disableClicks();
         .navcont{
+          transform: rotateZ(360deg);
           opacity:0;
           transition: opacity 1s linear;
         }
         &:after{
+          transform: rotateZ(360deg);
           opacity:0;
           transition: opacity 1s linear;
         }
