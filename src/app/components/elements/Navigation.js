@@ -8,7 +8,7 @@ class Navigation extends React.Component {
 			<div className="navcont">
 				<div className="container">
 					<div className="logo">
-						<NavLink activeClassName="acitve" className="nav-button" to="/">
+						<NavLink activeClassName="active" className="nav-button" to="/">
 							<img className="logo1" src={logo} alt="img" />
 							<img className="logo2" src={logo2} alt="img" />
 						</NavLink>
@@ -16,18 +16,18 @@ class Navigation extends React.Component {
 					<nav id="myNav">
 						<ul>
 							<li>
-								<NavLink activeClassName="acitve" to="/mywork">
+								<NavLink activeClassName="active" to="/mywork">
 									My Work
 								</NavLink>
 							</li>
 							<li>
-								<NavLink activeClassName="acitve" to="/aboutme">
-									About Me
+								<NavLink activeClassName="active" to="/whatido">
+									What I Do
 								</NavLink>
 							</li>
 							<li>
-								<NavLink activeClassName="acitve" to="/whatido">
-									What I Do
+								<NavLink activeClassName="active" to="/aboutme">
+									About Me
 								</NavLink>
 							</li>
 						</ul>

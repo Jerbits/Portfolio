@@ -2,11 +2,12 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 @import "./sass/variables.scss";
-@import "./sass/navigation.scss";
+@import "./sass/animate.scss";
 @import "./sass/typography.scss";
 @import "./sass/layout.scss";
+@import "./sass/navigation.scss";
 @import "./sass/slider.scss";
-@import "./sass/animate.scss";
+@import "./sass/projects.scss";
 
 html,
 body,
@@ -14,6 +15,5 @@ body,
   height: 100%;
 }
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: #000;
+    background-color: #000;
 }

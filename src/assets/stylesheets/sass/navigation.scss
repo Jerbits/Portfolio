@@ -17,6 +17,9 @@ nav{
 	min-width:570px;
 	position:relative;
 	z-index:100;
+	@media (#{$md}){
+		padding:0 0 0 60px;
+	}
 	@media (#{$sm}){
 		min-width: 263px;
 	}
@@ -29,34 +32,41 @@ nav{
 			a{
 				font-weight:normal;
 				font-size:17px;
-				color:#fff;
 				font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
-				-o-transition:.5s;
-				-ms-transition:.5s;
-				-moz-transition:.5s;
-				-webkit-transition:.5s;
-				transition:.5s;
 				display:inline-block;
 				text-align:left;
 				position:relative;
 				text-transform: uppercase;
 				z-index:999;
-				height:60px;
-				padding:19px 25px 0 60px;
-				text-shadow: 2px 2px 2px #000;
-				&:hover, &:active, &:focus{
-					color:#fff;
+				margin:19px 25px 0 60px;
+				text-shadow: 1px 1px 1px #000;
+				padding-bottom: 2px;
+				&:hover, &:active, &:focus, &.active{
+					color:#fff !important;
 					text-decoration:none;
+					border-bottom: 2px solid #ddd;
+				}
+				@media (#{$md}){
+					margin:19px 15px 0 15px;
+					font-size:15px;
+				}
+				@media (#{$sm}){
+					margin:19px 10px 0 10px;
 				}
 			}
 		}
 	}
 }
-@media (#{$gxs}){
+@media (#{$sm}){
     .logo1 {
-        display: block;
+        display: none;
     }
     .logo2 {
+        display: block;
+    }
+}
+@media (#{$gsm}){
+.logo2 {
         display: none;
     }
 }

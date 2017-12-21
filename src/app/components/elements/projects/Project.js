@@ -1,0 +1,28 @@
+import React from "react";
+import FontAwesome from 'react-fontawesome';
+import stars from 'images/five-stars'
+
+export const ProjectFront = props => {
+  return (
+    <div
+      className={`projectcont`}
+      style={{
+        backgroundImage: `url(${props.img})`
+      }}
+    />
+  );
+};
+
+export const ProjectBack = props => {
+  return (
+    <div className="projectcont">
+      <h3><strong><span className="highlight">{props.title}</span></strong></h3>
+      <a href={props.url} rel="nofollow" target="_blank">
+        
+      View Site
+      </a>
+      {(props.review !== null) ? <a rel="nofollow" target="_blank" className="fivestars" href={props.review}><img src={stars} alt="5 stars"/><br /> See Reviews</a> : null}
+      
+    </div>
+  );
+};

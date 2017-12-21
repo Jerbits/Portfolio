@@ -1,0 +1,47 @@
+#wrapper{
+	.ohidden{
+		overflow-y:hidden;
+	}
+	.outView{
+	  position: relative;
+	  height: 200px;
+	  margin-bottom: 20px;
+	  perspective: 1000px;	
+		.projectcont{
+			cursor: pointer;
+			border: 2px solid #fff;
+	  	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+		  background-size: cover;
+		  background-position: center;
+		  background-color: #224771;
+		  padding: 15px;
+		  position: absolute;
+		  top:0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  strong{
+		  	span.highlight{
+		  		color: #84A7C6;
+		  	}
+		  }
+		  .fivestars{
+		  	img{
+		  		width: 100px;
+		  	}
+		  }
+		  .fa{
+		  	font-size: 15px;
+		  }
+		  a{
+		  	color: #fff;
+		  	font-size: 12px;
+		  	display: block;
+		  	margin-top: 25px;
+		  	&:hover{
+		  		color: rgba(255,255,255,0.5);
+		  	}
+		  }
+		}
+	}
+}

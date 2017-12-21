@@ -53,7 +53,6 @@ class Footer extends React.Component {
 					stateChange={this.receiveStateChange}
 					proptest="I AM in the viewport!"
 				>
-					<span style={{color:"white"}}>What the fuck</span>
 				</ScrollTest>
 			</div>
 		);

@@ -4,6 +4,8 @@ import sunmoon2 from "images/img_sunmoon2";
 import sunmoon3 from "images/img_sunmoon3";
 import sunmoon4 from "images/img_sunmoon4";
 
+//Component for switching sun and moon images for each time of the day. Triggered by timeofdayprops
+
 class Sky extends React.Component {
 	changeDay(day) {
 		switch (day) {

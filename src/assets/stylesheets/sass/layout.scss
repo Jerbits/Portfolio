@@ -1,30 +1,156 @@
 #wrapper {
     min-height: 100%;
-    background: fixed top;
-    background-size: cover;
+    position: relative;
+    &:after{
+        content: "";
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: top;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;  
+        opacity:0.8;
+    }
     &.night{
+        &:after{
         background-image: url(../images/bg_night.jpg);
+        opacity: 1;
+        }
         .navcont{
             background: rgba(0,0,0,0.3);
         }
     }
     &.dawn{
-        background-image: url(../images/bg_dawn.jpg);
         padding-bottom: 80px;
+        &:after{
+           background-image: url(../images/bg_dawn.jpg); 
+        }
         .navcont{
-            background: rgba(41,142,232,0.3);
+            background: rgba(41,142,232,0.5);
         }
     }
     &.noon{
-        background-image: url(../images/bg_noon.jpg);
-        .navcont{
-            background: rgba(0,146,101,0.2);
+        &:after{
+           background-image: url(../images/bg_noon.jpg); 
+        }
+       .navcont{
+            background: rgba(0,146,101,0.5);
         }
     }
     &.dusk{
-        background-image: url(../images/bg_dusk.jpg);
-        .navcont{
-            background: rgba(255,108,75,0.1)
+        &:after{
+            background-image: url(../images/bg_dusk.jpg);
+        }
+       .navcont{
+            background: rgba(255,108,75,0.5)
+        }
+    }
+    .commentbox {
+        background: url(../images/img_comment.png) no-repeat 30px 50px rgba(255,255,255,0.2);
+        padding: 25px 25px 25px 125px;
+        margin: 50px auto;
+        @media (#{$xs}){
+            background-image: none;
+            padding: 25px;
+        }
+        &.nomar{
+            margin-bottom: 0px;
+            height: 100%;
+        }
+        &.noimg{
+            background-image: none;
+            padding: 35px;
+        }
+        .toolsdiv{
+            display: flex;
+            justify-content: center;
+            align-items: bottom;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            vertical-align: bottom;
+            > div{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction:row;
+                align-content:flex-end;
+                align-items: bottom;
+                width: 100px;
+                height: 160px;
+                margin: 10px;
+                @media (#{$sm}){
+                    width: 70px;
+                }
+                p{
+                    width: 100%;
+                    &:nth-child(2){
+                        background-color:rgba(0,146,101,0.5);
+                    }
+                }
+                img{
+                     -webkit-filter: drop-shadow(2px 2px 2px #222);
+                    filter: drop-shadow(2px 2px 2px #222);
+                    width: 100%;
+                }
+            }
+        }
+        .resume{
+            > div {
+                padding-bottom: 20px;
+            }
+        }
+        .sidebar{
+            padding-bottom: 25px;
+            .profilephoto{
+                img{
+                    max-width: 100px;
+                }
+            }
+            p{
+                position: relative;
+                margin-bottom: 20px;
+            }
+            span:nth-child(2){
+                position: absolute;
+                left:0;
+                margin-left: 30px;
+                @media (#{$sm}){
+                    position: static;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .feature{
+        text-align: center;
+        border: 10px solid rgba(255,255,255,0.3);
+        position: relative;
+        width: 100%;
+        border-radius: 999px;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+        margin: auto;
+        height: 250px;
+        width: 250px;
+        @media (#{$md}){
+            height: 200px;
+            width: 200px;
+        }
+        @media (#{$sm}){
+            border: 0px;
+            box-shadow:0px 0px 0px;
+            width: auto;
+            height: auto;
+        }
+        display: flex;
+        >div{
+            display: inline-block;
+            padding-top: 25%;
+            width: 100%;
+            @media (#{$sm}){
+
+            }
         }
     }
     .skybox {
@@ -82,53 +208,7 @@
             position: absolute;
         }
     }
-    .commentbox {
-        background: url(../images/img_comment.png) no-repeat 30px 30px #000;
-        padding: 25px 25px 25px 125px;
-        margin: 50px auto;
-        max-width: 920px;
-        border: 1px solid #333;
-    }
-    .clouds {
-        background: url(../images/bg_clouds.gif) repeat-x center bottom;
-        z-index: 1;
-        height: 811px;
-        top: 50%;
-        margin-top: -330px;
-        position: absolute;
-        width: 100%;
-    }
-    .projectbox {
-        background: url(../images/bg_projects.png) top center repeat-x;
-        padding: 20px 0px;
-        padding: 20px 0px;
-        margin-bottom: 30px;
-        .container {
-            max-width: 900px;
-            padding: 0px 15px;
-        }
-    }
-    .projectimg {
-        position: relative;
-        max-width: 427px;
-        margin: auto;
-        cursor: pointer;
-        img {
-            border: 1px solid #01bef3;
-            -moz-box-shadow: 2px 2px 2px #000;
-            -webkit-box-shadow: 2px 2px 2px #000;
-            box-shadow: 2px 2px 2px #000;
-            display: block;
-        }
-    }
-    .projectdesc {
-        max-width: 425px;
-        padding: 15px 0px 0px 0px;
-        margin: auto;
-        font-size: 17px;
-        line-height: 140%;
-        color: #FFF;
-    }
+    
     .absoproj {
         position: absolute;
         top: 0;
@@ -141,16 +221,6 @@
     .more {
         padding-top: 5px;
         font-weight: bold;
-    }
-
-    .waves {
-        background:url(../images/bg_waves.gif) repeat-x center center;
-        height: 408px;
-        top: 50%;
-        margin-top: -204px;
-        position: absolute;
-        width: 100%;
-        z-index: 1;
     }
     .whatidodesc {
         background: url(../images/bg_whatidodesc.png) top repeat-x;
@@ -212,16 +282,6 @@
         .slider {
             height: 175px;
         }
-        .aboutme p {
-            color: #FFF;
-            font-size: 15px;
-        }
-        .commentbox {
-            background: #000;
-            padding: 25px 25px 20px 20px;
-            max-width: 920px;
-            margin: 30px 10px;
-            border: 1px solid #333;
-        }
+
     }
 }

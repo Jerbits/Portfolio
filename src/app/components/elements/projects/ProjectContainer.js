@@ -1,18 +1,45 @@
 import React from "react";
-import { Watch } from  'scrollmonitor-react';
+import { Watch } from "scrollmonitor-react";
+import { ProjectFront } from "./Project";
+import { ProjectBack } from "./Project";
 
-export default Watch(class ProjectContainer extends React.Component {
-  render() {
-    let show = this.props.isInViewport ? "inView outView" : "outView";
-    return (
-      <div className={show} 
-        style={{
-          transitionDelay: this.props.delay,
-          height: "200px",
-          backgroundColor: "blue",
-          marginBottom: "20px"
-        }}
-      ></div>
-    );
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+
+export default Watch(
+  class ProjectContainer extends React.Component {
+    componentDidMount() {
+      //After component mounts create a flipper function based on the reference node
+      //Add mouseEnter and Leave event that flips element
+      const flip = this.flipNode;
+      flip.addEventListener("click", () => {
+        this.props.leave(this.props.title);
+        this.props.enter(this.props.title);
+      });
+    }
+    render() {
+      //When element is in viewport add the inview class along with the outview class
+      //to triggerxw css transitions making element fade up
+      let show = "outView";
+      if (this.props.isInViewport) {
+        show = this.props.isInViewport ? "inView outView" : null;
+        this.props.stopWatcher();
+      }
+      return (
+        <div
+          className={show}
+          ref={node => (this.flipNode = node)}
+          style={{ transitionDelay: this.props.delay }}
+        >
+          {/* Switch components based on state */}
+          <CSSTransitionGroup 
+          transitionName="pbox" 
+          transitionEnterTimeout={600} 
+          transitionLeaveTimeout={300}>
+          {!this.props.click ? ( <ProjectFront delay={this.props.delay} img={this.props.img} />) : null }
+          {this.props.click ? ( <ProjectBack title={this.props.title} url={this.props.url} review={this.props.review} />) : null }
+          </CSSTransitionGroup>
+        </div>
+      );
+    }
   }
-});
+);

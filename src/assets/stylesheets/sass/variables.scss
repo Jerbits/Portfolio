@@ -6,3 +6,35 @@ $gsm: "min-width: 768px";
 $xs: "max-width: 480px";
 $gxs: "min-width: 481px";
 $assetPath : "../images";
+
+//Font Variables;
+$font-line-height: 180%;
+$font-color: #fff;
+$font-link: #fff;
+
+@mixin fadedown(){
+	opacity: 0;
+	transform: translateY(80px);
+}
+@mixin fadeup(){
+	opacity: 1;
+	transform: translateY(0px);
+}
+@mixin entering(){
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	opacity:0;
+}
+@mixin entered(){
+	opacity:1;
+}
+@mixin disableClicks(){
+	.navcont{
+		a{
+			pointer-events: none;
+		}
+	}
+}
