@@ -37,7 +37,7 @@ class AboutMe extends React.Component {
 														<FontAwesome name="home" /><span> Brampton, Ontario</span>
 													</p>
 													<p>
-														<FontAwesome name="envelope" /><span> <a href="mailto:jerome8vercide@yahoo.com">Mail me!</a> </span>
+														<FontAwesome name="envelope" /><span> <a href="mailto:jerome8vercide@yahoo.com">Get in touch!</a> </span>
 													</p>
 													<p>
 														<a  target="blank" href="https://github.com/Jerbits">
