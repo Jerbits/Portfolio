@@ -53,6 +53,10 @@ nav{
 				@media (#{$sm}){
 					margin:19px 10px 0 10px;
 				}
+				@media (#{$xs}){
+					margin:22px 7px 0 7px;
+					font-size:12px;
+				}
 			}
 		}
 	}

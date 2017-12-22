@@ -13,9 +13,10 @@
         }
         @media (#{$sm}){
             height: 230px;
+            margin-top: 100px;
         }
         @media (#{$xs}){
-            height: 150px;
+            height: 130px;
         }
         img {
             position: absolute;
