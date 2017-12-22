@@ -13,12 +13,14 @@ class NotFound extends React.Component{
 				<div className="container">
 		      <div className="starter-template">
 						<div>
-							<img src={sample} alt=""/>
+						<br />
+						<br />
+						<br />
+						<br /><br /><br />
 							<h1 style={{textAlign:"center"}}><FA name="rocket" size="2x" spin style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}></FA> <br />Sorry, page not found!</h1>
 						</div>
 		      </div>
 		    </div>
-				<Footer />
 			</div>
 		)
 	}
