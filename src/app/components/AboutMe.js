@@ -140,10 +140,10 @@ class AboutMe extends React.Component {
 															</li>
 															<li>
 																Integrated jquery/javascript frontend modules
-																e.g. draggable widgets, responsive ui,
-																responsive menus, module generators
+																e.g. draggable widgets, responsive UI and 
+																responsive menus
 															</li>
-															<li>Interview / Evaluate new GUI developers</li>
+															<li>Interview and evaluate new GUI developers</li>
 														</ul>
 													</div>
 
@@ -168,16 +168,15 @@ class AboutMe extends React.Component {
 																environment
 															</li>
 															<li>
-																Executed multiple web-based application
-																projects.
+																Execute multiple web-based applications
 															</li>
 															<li>
 																Worked closely with internal clients to develop
-																and execute IT initiatives.
+																and execute IT initiatives
 															</li>
 															<li>
 																Converted designs to high quality html/css
-																templates.
+																templates
 															</li>
 															<li>
 																Coordinated with business analysts and other
@@ -186,10 +185,6 @@ class AboutMe extends React.Component {
 															</li>
 															<li>
 																Trained and calibrated new hired developers.
-															</li>
-															<li>
-																Developed a process to systemize frontend
-																development.
 															</li>
 														</ul>
 													</div>
@@ -210,11 +205,10 @@ class AboutMe extends React.Component {
 														</h3>
 														<ul>
 															<li>
-																Developed flash based Microsoft application
-																tutorials.
+																Developed flash tutorials for Microsoft applications
 															</li>
 															<li>
-																Converted simple Japanese games to flash based
+																Converted simple Japanese games to flash
 																applications.
 															</li>
 														</ul>

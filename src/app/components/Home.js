@@ -4,7 +4,6 @@ import FA from "react-fontawesome";
 import Navigation from "./elements/Navigation";
 import Slider from "./elements/Slider";
 import Sky from "./elements/Sky";
-import Footer from "./elements/Footer";
 
 class Home extends React.Component {
 	render() {

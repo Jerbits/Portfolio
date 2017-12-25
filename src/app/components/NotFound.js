@@ -1,7 +1,5 @@
 import React from 'react';
 import Navigation from './elements/Navigation';
-import Body from './elements/Body';
-import Footer from './elements/Footer';
 import FA from 'react-fontawesome';
 import sample from 'images/index';
 
