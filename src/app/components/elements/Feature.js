@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types'
 import FontAwesome from "react-fontawesome";
 import { Watch } from  'scrollmonitor-react';
 
@@ -17,5 +18,9 @@ export default Watch(class Feature extends React.Component {
 	      </div>
 			</div>
 		);
+	}
+	propTypes = {
+	  faname: PropTypes.string.isRequired,
+	  title: PropTypes.string
 	}
 });

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import FontAwesome from 'react-fontawesome';
 import stars from 'images/five-stars'
 import framework from 'images/projects/framework';
@@ -13,7 +14,6 @@ import brimstone from 'images/projects/brimstone';
 import russellfinex from 'images/projects/russellfinex';
 import responsive from 'images/projects/responsive';
 
-
 export const ProjectFront = props => {
   return (
     <div
@@ -22,8 +22,12 @@ export const ProjectFront = props => {
         backgroundImage: `url(${props.img})`
       }}
     />
-  );
+  )
 };
+
+ProjectFront.propTypes = {
+  img: PropTypes.string
+}
 
 export const ProjectBack = props => {
   return (
@@ -36,5 +40,11 @@ export const ProjectBack = props => {
       {(props.review !== null) ? <a rel="nofollow" target="_blank" className="fivestars" href={props.review}><img src={stars} alt="5 stars"/><br /> See Reviews</a> : null}
       
     </div>
-  );
+  )
 };
+
+ProjectFront.propTypes = {
+  review: PropTypes.string,
+  title: PropTypes.string
+}
+

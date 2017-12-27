@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import sunmoon from "images/img_sunmoon";
 import sunmoon2 from "images/img_sunmoon2";
 import sunmoon3 from "images/img_sunmoon3";
@@ -31,6 +32,9 @@ class Sky extends React.Component {
 			</div>
 		);
 	}
+	static propTypes = {
+    stateofday: PropTypes.string.isRequired
+  }
 }
 
 export default Sky;

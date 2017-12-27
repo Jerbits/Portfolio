@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
 import { randomdelay } from "../../helpers";
 
@@ -70,6 +71,11 @@ class Projects extends React.Component {
 			</div>
 		);
 	}
+	static propTypes = {
+    onLeave: PropTypes.func.isRequired,
+    onEnter: PropTypes.func.isRequired,
+    projectArray: PropTypes.array.isRequired,
+  }
 }
 export default connect(
 	mapStateToProps,

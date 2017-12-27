@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import Slider1 from './sliders/Slider1';
@@ -63,6 +64,10 @@ class Slider extends React.Component {
 			</div>
 		);
 	}
+}
+
+Slider.propTypes = {
+	speed: PropTypes.number.isRequired
 }
 
 export default connect(
