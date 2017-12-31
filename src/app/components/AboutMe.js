@@ -101,8 +101,7 @@ class AboutMe extends React.Component {
 																mobile responsive development.
 															</li>
 															<li>
-																Research and evaluate a variety of interactive
-																media software to integrate to our existing
+																Research and evaluate a variety of frameworks to integrate to our existing
 																skillsets.
 															</li>
 														</ul>

@@ -7,6 +7,9 @@
 	  height: 200px;
 	  margin-bottom: 20px;
 	  perspective: 1000px;	
+	  @media (#{$xs}){
+				height: 150px;
+			}
 		.projectcont{
 			cursor: pointer;
 			border: 2px solid #fff;
@@ -38,6 +41,9 @@
 		  	font-size: 12px;
 		  	display: block;
 		  	margin-top: 25px;
+		  	@media (#{$xs}){
+					margin-top: 10px;
+				}
 		  	&:hover{
 		  		color: rgba(255,255,255,0.5);
 		  	}

@@ -28,6 +28,9 @@
 		@media (#{$sm}){
 			font-size:30px;
 		}
+		@media (#{$xs}){
+			font-size:20px;
+		}
 	}
 	h2{
 		font-size:25px;
@@ -35,12 +38,19 @@
 		@media (#{$sm}){
 			font-size:20px;
 		}
+		@media (#{$xs}){
+			font-size:16px;
+		}
 	}
 	h3{
 		font-size:20px;
 		@media (#{$sm}){
 			font-size:18px;
 		}
+		@media (#{$xs}){
+			font-size:15px;
+		}
+
 	}
 	p{
 		font-family: Arial, serif;
@@ -48,6 +58,9 @@
 		text-shadow:0px 0px 0px;
 		@media (#{$sm}){
 			font-size:16px;
+		}
+		@media (#{$xs}){
+			font-size:14px;
 		}
 	}
 	.fa{
@@ -82,6 +95,10 @@
 			@media (#{$sm}){
 				font-size: 15px;
 			}
+			@media (#{$xs}){
+				font-size: 14px;
+				font-weight: normal;
+			}
 		}
 		.fa{
 			font-size: 50px;
@@ -102,6 +119,9 @@
           text-shadow: 1px 1px 1px #414242;
           text-transform: uppercase;
           font-size: 13px;
+          @media (#{$xs}){
+          	font-size: 10px;
+          }
         }
 			}
 		}
@@ -116,10 +136,16 @@
                  @media (#{$sm}){
                     text-align: center;
                 }
+                @media (#{$xs}){
+                    text-align: left;
+                }
             }
             p{
                 @media (#{$sm}){
                     text-align: center;
+                }
+                @media (#{$xs}){
+                    text-align: left;
                 }
 
             }
@@ -163,6 +189,10 @@
     		text-align: center;
     		text-transform: uppercase;
     		color: rgb(1,79,153);
+    		@media (#{$xs}){
+    			margin-top: 0px;
+    		}
+    		
     	}
     	a{
     		display: block;

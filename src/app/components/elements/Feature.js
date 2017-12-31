@@ -19,7 +19,7 @@ export default Watch(class Feature extends React.Component {
 			</div>
 		);
 	}
-	propTypes = {
+	static propTypes = {
 	  faname: PropTypes.string.isRequired,
 	  title: PropTypes.string
 	}
