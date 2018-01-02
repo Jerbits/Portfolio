@@ -22,6 +22,7 @@ import mysql from "images/tech/mysql.png";
 import php from "images/tech/php.png";
 import redux from "images/tech/redux.png";
 import webpack from "images/tech/webpack.png";
+import sublime from "images/tech/sublime.png";
 
 class WhatIDo extends React.Component {
 	render() {
@@ -77,6 +78,7 @@ class WhatIDo extends React.Component {
 											<div><p><img  src={php} alt="php" /></p><p>php</p></div>
 											<div><p><img  src={redux} alt="redux" /></p><p>redux</p></div>
 											<div><p><img  src={webpack} alt="webpack" /></p><p>webpack</p></div>
+											<div><p><img  src={sublime} alt="sublime" /></p><p>sublime</p></div>
 										</div>
 
 										</div>
