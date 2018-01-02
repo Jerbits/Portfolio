@@ -69,41 +69,14 @@ class AboutMe extends React.Component {
 															</span>
 														</h3>
 														<ul>
-															<li>Develop interactive User Interfaces</li>
-															<li>
-																Ensure the technical feasibility of UI/UX
-																designs
-															</li>
-															<li>
-																Handle application optimisations for maximum
-																speed and scalability
-															</li>
-															<li>
-																Collaborate with other team members and
-																stakeholders
-															</li>
-															<li>
-																Communicate with clients to develop and document
-																website requirements. Provide project cost
-																estimations
-															</li>
-															<li>
-																Write semantic, well-formed responsive HTML5
-																markups and CSS.
-															</li>
-															<li>
-																May lead and co-ordinate multidisciplinary teams
-																to develop website graphics, content, and UI
-																interactivity. Leads two junior frontend
-																developers. Collaborates with team to develop
-																large projects involving web development,
-																content migration, multilingual integration, and
-																mobile responsive development.
-															</li>
-															<li>
-																Research and evaluate a variety of frameworks to integrate to our existing
-																skillsets.
-															</li>
+															<li>Write maintainable, scalable, responsive, and cross-browser code.</li>
+															<li>Collaborate with creative and development teams on the execution of ideas and projects. </li>
+															<li>Promote and communicate new ideas, process improvements, and new technologies to team members. </li>
+															<li>Updated and streamlined existing code to improve site performance.</li>
+															<li>Utilized modern JavaScript and HTML 5 techniques, frameworks, and libraries. </li>
+															<li>Wrote support documentation and provided training to internal and external users. </li>
+															<li>Worked collaboratively with a cross-functional team to define and develop product roadmaps.</li>
+															<li>Responsible for developing and maintaining high quality web user interfaces for clients.</li>
 														</ul>
 													</div>
 
@@ -125,24 +98,10 @@ class AboutMe extends React.Component {
 															</span>
 														</h3>
 														<ul>
-															<li>Redesigned SAAS GUI.</li>
-															<li>
-																Front end/UI updates to improve user experience.
-															</li>
-															<li>
-																Peer review and approval of all code created for
-																updates
-															</li>
-															<li>
-																Converted designs to high quality bootstrap
-																compliant modules.
-															</li>
-															<li>
-																Integrated jquery/javascript frontend modules
-																e.g. draggable widgets, responsive UI and 
-																responsive menus
-															</li>
-															<li>Interview and evaluate new GUI developers</li>
+															<li>Updated and redesigned the Utilibill SAAS user interface.</li>
+															<li>Applied frontend user interface updates to improve user experience.</li>
+															<li>Peer review for frontend code and updates.</li>
+															<li>Integrated Jquery and vanilla Javascript frontend libraries.</li>
 														</ul>
 													</div>
 
